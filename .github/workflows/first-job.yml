@@ -4,7 +4,8 @@ on:
   - push
 
 jobs: 
-    first_job: 
+    first_job:
+        name: samboat 
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Code
@@ -14,4 +15,4 @@ jobs:
               run: |
                 echo "My first GitHub Actions Job"
                 ls -1
-                cat dockerfile
+                cat Dockerfile
