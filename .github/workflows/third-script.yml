@@ -1,17 +1,17 @@
-# name: Third-Workflow
+name: Third-Workflow
 
-# on:
-#   - push
+on:
+  - push
 
-# jobs: 
-#     first_job: 
-#         name: sam3
-#         runs-on: ubuntu-latest
-#         steps:
-#             - name: Checkout Code
-#               uses: actions/checkout@v4
+jobs: 
+    first_job: 
+        name: sam3
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4
 
-#             - name: Execute Shell Script
-#               run: |
-#                 chmod +x third-script.sh
-#                 ./third-script.sh
+            - name: Execute Shell Script
+              run: |
+                chmod +x third-script.sh
+                ./third-script.sh
